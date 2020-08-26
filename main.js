@@ -29,4 +29,29 @@ $(document).ready(function () {
         duration: 1800,
         once: true
     });
+
+    // $("#submit").on('click', function() {
+    //     let name = $("#name").val();
+    //     let email = $("#email").val();
+    //     let subject = $("#subject").val();
+    //     let message = $("#message").val();
+    //     $("#returnmessage").empty(); // To empty previous error/success message.
+    //     // Checking for blank fields.
+    //     $('.form-horizontal input').on('focus', function(){
+    //         $("#returnmessage").empty();
+    //     })
+    //     if (name == '' || email == '' ) {
+    //         $("#returnmessage").empty()
+    //                 .append('Please fill all the required fields');
+    //     }else {
+    //         console.log('query in last else');
+    //         // Returns successful data submission message when the entered information is stored in database.
+    //         $.post("mailer.php", {
+    //             inputName: name,
+    //             inputEmail: email,
+    //             inputSubject: subject,
+    //             inputMessage: message
+    //         });
+    //     }
+    // });
 });

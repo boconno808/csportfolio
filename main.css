@@ -410,7 +410,7 @@ li{
 .timeline .date::after{
     content: '';
     box-shadow: 0 0 0 4px #fbf3f2;
-    border-radius: 100%;
+    transform: rotate(45deg);
     left: -8rem;
     height: 1.5rem;
     width: 1.5rem;
@@ -420,10 +420,6 @@ li{
 /*End timeline*/
 
 /*Start contact*/
-.contact{
-    background-color:#032539;
-}
-
 form{
     width: 70%;
     margin: 0 auto;
@@ -443,7 +439,7 @@ textarea{
     outline-color:032539; 
 }
 
-input[type="submit"]{
+button[type="submit"]{
     width: initial;
     background-color: #1c768f;
     color: #fbf3f2;
@@ -453,7 +449,7 @@ input[type="submit"]{
     transition: background-color 650ms;
 }
 
-input[type="submit"]:hover{
+button[type="submit"]:hover{
     color: #032539;
     background-color: #fa991c;
 }
