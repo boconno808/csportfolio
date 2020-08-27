@@ -235,17 +235,22 @@
             <div class="section-heading">
                 <h1>Contact</h1>
                 <h6>I'd love to get in touch</h6>
+                <h6 class="sent-notification"></h6>
             </div>
-            <form method="POST" action="mailer.php" data-aos="fade-up" data-aos-delay="300">
+            <form id="myForm" data-aos="fade-up" data-aos-delay="300">
+
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter name..." required>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter email..." required>
+
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" placeholder="Enter subject..." required>
+
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" cols="10" rows="10"></textarea>
-                <button type="submit" id="submit">Submit</button>
+                <button type="submit" id="submit" onsubmit="sendEmail()">Submit</button>
             </form>
         </div>
     </section>
@@ -258,7 +263,44 @@
         <p>&copy; 2020 Bridget OConnor</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        function sendEmail(){
+            var name = $("#name");
+            var email = $("#email");
+            var subject = $("#subject");
+            var message = $("#message");
+
+            if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject)){
+                $.ajax({
+                    url: 'sendEmail.php',
+                    method: 'POST',
+                    dataType: 'json',
+                    data:{
+                        name: name.val(),
+                        email: email.val(),
+                        subject: subject.val(),
+                        message: message.val()
+                    }, success: function(response){
+                        $('#myForm')[0].reset();
+                        $('.sent-notification').text("Thanks for your email!");
+                    }
+                });
+            }
+        }
+        function isNotEmpty(caller){
+            if(caller.val()==""){
+                caller.css('border','1px solid red');
+                return false;
+            }
+            else
+            {
+                caller.css('border', '');
+                return true;
+            }
+        }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
