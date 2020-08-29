@@ -38,6 +38,18 @@ img{
 /*End global*/
 
 /*Start reusable*/
+.form-error{
+    color:red;
+}
+
+.form-success{
+    color:#1c768f;
+}
+
+.input-error{
+    box-shadow: 0 0 5px red;
+}
+
 .hidden{
     overflow: hidden;
     position: fixed;
