@@ -18,10 +18,6 @@ if(isset($_POST['name']) && isset($_POST['email'])){
         $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
         try {
             $response = $sendgrid->send($email);
-            // print $response->statusCode() . "\n";
-            // print_r($response->headers());
-            // print $response->body() . "\n";
-            // print php
             header("Location: index.php?sent=success#contact");
             exit();
 
