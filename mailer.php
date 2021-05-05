@@ -1,8 +1,11 @@
 <?php
 require 'vendor/autoload.php';
 if(isset($_POST['name']) && isset($_POST['email'])){
-
-    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+    if(isset($_POST['botVerfication'])){
+        $response = "Caught exeception: bot";
+        header("Location: index.php");
+        exit();
+    } elseif(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
         $name = $_POST['name'];
         $userEmail = $_POST['email'];
         $subject = $_POST['subject'];

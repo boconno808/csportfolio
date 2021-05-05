@@ -3,3 +3,4 @@ sendgrid.env
 .DS_Store
 .vscode/launch.json
 portfolio.code-workspace
+helper.md

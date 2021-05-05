@@ -212,7 +212,7 @@
           <div
             class="portfolio-description has-margin-right"
             data-aos="fade-right"
-            data-aos-delay="2100"
+            data-aos-delay="1800"
           >
             <h6>Programming Language</h6>
             <h1>Big Mama's Kitchen Script</h1>
@@ -230,7 +230,7 @@
               src="images/portitem4.jpeg"
               alt=""
               data-aos="fade-left"
-              data-aos-delay="2400"
+              data-aos-delay="1800"
             />
           </div>
         </div>
@@ -246,6 +246,13 @@
       </div>
       <div class="timeline" data-aos="fade-down" data-aos-delay="300">
         <ul>
+          <li class="date" data-date="9/2020 - 1/2021">
+            <h1>Lokahi Local Made</h1>
+            <p>
+            Helped with Shopify website management of at a start-up company helping local businesses sell product during covid.
+            Worked to integrate FedEx shipping as an option for all customers in the U.S. Managed task organization in Trello and GSuite.
+            </p>
+          </li>
           <li class="date" data-date="6/2020 - 8/2020">
             <h1>Savage x Fenty - TechStyle</h1>
             <p>
@@ -269,7 +276,7 @@
               Helped to develop front end features for the client portal of a
               company that helps parking & traffic administrators boost
               efficiency with video-analysis technology. Implemented UI
-              components using the React library coded in Typescript.
+              components using React coded in Typescript.
             </p>
           </li>
         </ul>
@@ -332,6 +339,9 @@
 
           <label for="message">Message:</label>
           <textarea name="message" id="message" cols="10" rows="10"></textarea>
+          <input class="botVerification" type="checkbox" id="botVerfication" name="botVerfication" value="verified">
+          <label class="botVerification" for="botVerfication">I am not a bot</label>
+          <br>
           <button type="submit" name="submit" id="submit">Submit</button>
         </form>
       </div>

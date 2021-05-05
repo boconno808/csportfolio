@@ -464,6 +464,12 @@ button[type="submit"]:hover {
   background-color: #fa991c;
 }
 
+.contact .container .botVerification {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
 /*End contact*/
 
 /*Start footer*/
