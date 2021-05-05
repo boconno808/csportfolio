@@ -62,12 +62,12 @@
             <h6>Me</h6>
           </div>
           <p>
-            Hello! I'm an Animation and CS Undergraduate, studying at Loyola
-            Marymount University. I'm also minoring in Asian and Pacific
+            Hello! I'm an new graduate from Loyola Marymount University. 
+            I majored in Animation and CS and minored in Asian and Pacific
             studies. Born and raised in Hawai'i, I came to college in LA to
             pursue my passions of studying art and technology! I'm currently
             back at home, working and studying remotely. Career-wise I'm
-            interested in software engineering, web-development, UI/UX, and AR.
+            interested in software engineering and web-development.
             I'm flexible and always excited meet new people and try new fields
             and tools.
           </p>
@@ -84,14 +84,6 @@
                   class="icon-link"
                 >
                   <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/bridgetoconno/"
-                  class="icon-link"
-                >
-                  <i class="fab fa-instagram"></i>
                 </a>
               </li>
             </ul>
@@ -113,7 +105,7 @@
             </div>
             <h1>Development</h1>
             <p>
-              Javascript, HTML/CSS, Java, C#, Jest, RTL, React.js, Node.js,
+              Javascript, HTML/CSS, Java, C#, Jest, Next.js, React.js, Node.js,
               Python
             </p>
           </div>
@@ -205,13 +197,13 @@
             data-aos-delay="1800"
           >
             <h6>Web Development</h6>
-            <h1>Coro-No-Virus</h1>
+            <h1>Picture Imperfect</h1>
             <p>
-              Informational website created for Athenahacks 2020 in a team of 2,
-              supports multiple languages. Created using React.js, Microsoft
-              Azure Translator, and the Material UI library.
+            Picture Imperfect is a web-based game in which teams of players recieve a word and work together to draw it. 
+            The caveat is that the two teams are drawing two different words on the same canvas. 
+            The goal is to get the judge(s) to guess your teams word first. Utlitizes React.js and Node.js.
             </p>
-            <a href="https://boconno808.github.io/CoroNo/" class="cta"
+            <a href="https://picture-imperfect.herokuapp.com/" class="cta"
               >View Project</a
             >
           </div>
@@ -222,16 +214,14 @@
             data-aos="fade-right"
             data-aos-delay="2100"
           >
-            <h6>Web Development</h6>
-            <h1>Random Japanese Word Generator</h1>
+            <h6>Programming Language</h6>
+            <h1>Big Mama's Kitchen Script</h1>
             <p>
-              Simple website that randomly generates Japanese words with English
-              definitions. Website also shows whether or not the word generated
-              is common and its JLPT level if applicable. Created using
-              React.js, Gatsby, Semantic UI, Denshi-Jishos API, and a random
-              word generator API.
+              Cooking themed esoteric programming language with static typing and static scoping.
+              Implements array and dictionary data structures and uses a variety of fun cooking keywords.
+              Utilizes Ohm and Javascript.
             </p>
-            <a href="https://randomjpnwordgen.netlify.app/" class="cta"
+            <a href="https://mmikol.github.io/BigMamasKitchen/dist/index.html" class="cta"
               >View Project</a
             >
           </div>
