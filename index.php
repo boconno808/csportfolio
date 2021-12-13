@@ -40,9 +40,6 @@
           <li>
             <a href="#experience" class="nav-link">EXPERIENCE</a>
           </li>
-          <li>
-            <a href="#contact" class="nav-link">CONTACT</a>
-          </li>
         </ul>
       </nav>
       <div class="landing-text">
@@ -280,70 +277,6 @@
             </p>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Contact</h1>
-          <?php
-            if(!$_GET):
-            ?>
-          <h6>I'd love to get in touch</h6>
-          <?php
-            elseif($_GET['sent'] === 'success'):
-            ?>
-          <h6>Thanks for your message!</h6>
-          <?php
-            elseif(($_GET['sent'] === 'failure')):
-            ?>
-          <h6>The message couldn't be sent right now...</h6>
-          <?php
-            endif;
-            ?>
-        </div>
-        <form
-          id="myForm"
-          method="POST"
-          action="mailer.php"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter name..."
-            required
-          />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter email..."
-            required
-          />
-
-          <label for="subject">Subject:</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Enter subject..."
-            required
-          />
-
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="10" rows="10"></textarea>
-          <input class="botVerification" type="checkbox" id="botVerfication" name="botVerfication" value="verified">
-          <label class="botVerification" for="botVerfication">I am not a bot</label>
-          <br>
-          <button type="submit" name="submit" id="submit">Submit</button>
-        </form>
       </div>
     </section>
 
